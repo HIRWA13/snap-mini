@@ -1,9 +1,13 @@
+import { ReactElement } from "react"
+import Header from "./components/Header"
+import Main from "./components/Main"
 
-function App() {
+function App():ReactElement {
 
   return (
     <>
-      <h1 className="text-4xl font-Epilogue">Hello React</h1>
+      <Header/>
+      <Main/>
     </>
   )
 }
