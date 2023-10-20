@@ -1,16 +1,16 @@
 import { ReactElement } from "react";
-import ClientAudioPhile from "../assets/ClientAudioPhile.svg";
-import ClientDataBiz from "../assets/ClientDataBiz.svg";
-import ClientMaker from "../assets/ClientMaker.svg";
-import ClientMeet from "../assets/ClientMeet.svg";
+import clientaudiophile from "../assets/clientaudiophile.svg";
+import clientdatabiz from "../assets/clientdatabiz.svg";
+import clientmaker from "../assets/clientmaker.svg";
+import clientmeet from "../assets/clientmeet.svg";
 
 export default function Clients(): ReactElement {
   return (
-    <div className="flex items-center justify-between px-4 gap-2">
-      <img src={ClientDataBiz}/>
-      <img src={ClientAudioPhile}/>
-      <img src={ClientMeet}/>
-      <img src={ClientMaker}/>
-    </div>
+    <section className="flex items-center justify-between gap-2">
+      <img className="h-5" src={clientdatabiz}/>
+      <img className="h-5" src={clientaudiophile}/>
+      <img className="h-5" src={clientmeet}/>
+      <img className="h-5" src={clientmaker}/>
+    </section>
   );
 }
