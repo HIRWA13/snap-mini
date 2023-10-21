@@ -6,7 +6,7 @@ import clientmeet from "../assets/clientmeet.svg";
 
 export default function Clients(): ReactElement {
   return (
-    <section className="flex items-center justify-between gap-2">
+    <section className="flex items-center justify-between gap-3 md:justify-start md:gap-x-10">
       <img className="h-5" src={clientdatabiz}/>
       <img className="h-5" src={clientaudiophile}/>
       <img className="h-5" src={clientmeet}/>
