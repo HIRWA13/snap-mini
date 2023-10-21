@@ -8,7 +8,7 @@ type IconMenuProps = {
 export default function IconMenu({isOpen, setIsOpen}: IconMenuProps):ReactElement {
   return (
     <div 
-        className="cursor-pointer"
+        className="cursor-pointer md:hidden"
         onClick={() => setIsOpen(!isOpen)}
     >
       <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
