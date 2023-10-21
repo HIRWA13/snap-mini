@@ -10,11 +10,11 @@ export default function Main():ReactElement {
         <section>
           <img src={mobileHero} className="md:hidden" />
         </section>
-        <section className="p-3 mt-5 md:mt-0 flex flex-col items-center justify-center gap-3 md:items-start md:space-y-8">
-          <h1 className="text-4xl text-dark text-center font-Epilogue font-bold md:text-8xl md:text-left">
+        <section className="p-3 mt-5 md:mt-0 flex flex-col items-center justify-center gap-3 md:items-start md:space-y-8 md:p-0">
+          <h1 className="text-4xl text-dark text-center font-Epilogue font-bold md:text-8xl md:pr-4 md:text-left">
             Make remote work
           </h1>
-          <p className="px-3 text-lg text-gray font-Epilogue text-center md:text-left md:text-2xl">
+          <p className="px-3 text-lg text-gray font-Epilogue text-center md:text-left md:text-2xl md:px-0 md:pr-20">
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
           </p>
