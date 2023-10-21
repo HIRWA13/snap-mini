@@ -5,7 +5,7 @@ import heroImage from "../assets/imageherodesktop.png"
 
 export default function Main():ReactElement {
   return (
-    <main className="space-y-8 md:p-3 md:flex md:items-center md:justify-between md:w-4/5 md:mx-auto">
+    <main className="space-y-8 md:p-3 md:flex md:items-center md:justify-around md:w-4/5 md:mx-auto">
       <section className=" md:w-1/2 md:space-y-12">
         <section>
           <img src={mobileHero} className="md:hidden" />
@@ -14,7 +14,7 @@ export default function Main():ReactElement {
           <h1 className="text-4xl text-dark text-center font-Epilogue font-bold md:text-8xl md:text-left">
             Make remote work
           </h1>
-          <p className="px-2 text-gray font-Epilogue text-center md:text-left md:text-2xl">
+          <p className="px-3 text-lg text-gray font-Epilogue text-center md:text-left md:text-2xl">
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
           </p>
