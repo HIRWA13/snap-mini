@@ -12,7 +12,7 @@ export default function Sidebar({isOpen, setIsOpen}: SidebarProps): ReactElement
       <div className="bg-dark h-full w-full flex-1 fixed top-0 left-0 opacity-80">.</div>
       <div  className="w-4/6 fixed bg-light opacity-100 top-0 right-0 h-full">
         <div className="p-2">
-          <img src={close} className="fixed top-5 right-4" onClick={()=> setIsOpen(!isOpen)}/>
+          <img src={close} className="fixed top-5 right-4 cursor-pointer" onClick={()=> setIsOpen(!isOpen)}/>
         </div>
       </div>
     </section>
