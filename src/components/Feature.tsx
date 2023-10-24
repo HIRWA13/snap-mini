@@ -10,7 +10,7 @@ export default function Feature(): ReactElement {
   return (
     <Menu as="div">
       <Menu.Button className="font-Epilogue text-xl" onClick={()=> {console.log("clicked")}}>Feature</Menu.Button>
-      <Menu.Items className="absolute w-40 bg-light rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+      <Menu.Items className="absolute left-20 w-40 bg-light rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
         <div className="flex items-center space-x-5 w-full p-2">
           <img src={todo} />
           <h1>Todo List</h1>
