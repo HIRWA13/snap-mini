@@ -15,7 +15,7 @@ interface FeatureProps {
 export default function Feature({arrowHandler, isArrowOpen}: FeatureProps): ReactElement {
   return (
     <Menu as="div">
-      <div className="flex items-center gap-x-3">
+      <div className="flex items-center gap-x-3 cursor-pointer">
         <Menu.Button
           as="li"
           className="font-Epilogue cursor-pointer hover:text-gray"
@@ -23,7 +23,7 @@ export default function Feature({arrowHandler, isArrowOpen}: FeatureProps): Reac
         >
           Feature
         </Menu.Button>
-      {isArrowOpen ? <img src={arrowDown} /> : <img src={arrowUp} />}
+        {isArrowOpen ? <img src={arrowDown} /> : <img src={arrowUp} />}
       </div>
       <Menu.Items className="absolute left-20 top-14 w-40 bg-light rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
         <div className="flex flex-col items-center justify-center">

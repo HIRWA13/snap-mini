@@ -13,7 +13,7 @@ export default function Navigation(): ReactElement {
         <Feature arrowHandler={arrowHandler} isArrowOpen={isArrowOpen} />
       </li>
       <li>
-        <Company arrowHandler={arrowHandler} />
+        <Company arrowHandler={arrowHandler} isArrowOpen={isArrowOpen}/>
       </li>
       <li className="font-Epilogue cursor-pointer hover:text-gray">Careers</li>
       <li className="font-Epilogue cursor-pointer hover:text-gray">About</li>
