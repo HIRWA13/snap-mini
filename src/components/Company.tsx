@@ -7,7 +7,7 @@ export default function Company(): ReactElement {
       <Menu as="div">
         <Menu.Button
           as="li"
-          className="font-Epilogue cursor-pointer"
+          className="font-Epilogue cursor-pointer hover:text-gray"
           onClick={() => {
             console.log("clicked");
           }}

@@ -1,23 +1,30 @@
-import { ReactElement, useState } from "react";
+import { ReactElement } from "react";
 import { Menu } from "@headlessui/react";
 import planning from "../assets/iconplanning.svg"
 import todo from "../assets/icontodo.svg"
 import calendar from "../assets/iconcalendar.svg"
 import reminders from "../assets/iconreminders.svg"
+import arrowUp from "../assets/iconarrowup.svg"
+import arrowDown from "../assets/iconarrowdown.svg"
 
-export default function Feature(): ReactElement {
-  const [isArrowOpen, setIsArrowOpen] = useState(false)
+interface FeatureProps {
+  isArrowOpen: boolean;
+  arrowHandler: () => void;
+}
+
+export default function Feature({arrowHandler, isArrowOpen}: FeatureProps): ReactElement {
   return (
     <Menu as="div">
-      <Menu.Button
-        as="li"
-        className="font-Epilogue cursor-pointer"
-        onClick={() => {
-          console.log("clicked");
-        }}
-      >
-        Feature
-      </Menu.Button>
+      <div className="flex items-center gap-x-3">
+        <Menu.Button
+          as="li"
+          className="font-Epilogue cursor-pointer hover:text-gray"
+          onClick={arrowHandler}
+        >
+          Feature
+        </Menu.Button>
+      {isArrowOpen ? <img src={arrowDown} /> : <img src={arrowUp} />}
+      </div>
       <Menu.Items className="absolute left-20 top-14 w-40 bg-light rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
         <div className="flex flex-col items-center justify-center">
           <div className="flex items-center space-x-5 w-full p-2 px-5">
