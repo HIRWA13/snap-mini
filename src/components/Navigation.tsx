@@ -1,18 +1,22 @@
-import { ReactElement } from "react";
+import { ReactElement, useState } from "react";
 import Feature from "./Feature";
 import Company from "./Company";
 
 export default function Navigation(): ReactElement {
+    const [isArrowOpen, setIsArrowOpen] = useState(false);
+    const arrowHandler = () => {
+        setIsArrowOpen(!isArrowOpen);
+    }
   return (
     <ul className="hidden md:flex items-start gap-x-14">
       <li>
-        <Feature />
+        <Feature arrowHandler={arrowHandler} isArrowOpen={isArrowOpen} />
       </li>
       <li>
-        <Company />
+        <Company arrowHandler={arrowHandler} />
       </li>
-      <li className="font-Epilogue">Careers</li>
-      <li className="font-Epilogue">About</li>
+      <li className="font-Epilogue cursor-pointer hover:text-gray">Careers</li>
+      <li className="font-Epilogue cursor-pointer hover:text-gray">About</li>
     </ul>
   );
 }
