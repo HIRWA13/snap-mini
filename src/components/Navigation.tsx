@@ -5,8 +5,14 @@ import Company from "./Company";
 export default function Navigation(): ReactElement {
   return (
     <ul className="hidden md:flex items-start gap-x-14">
-        <Feature/>
-        <Company/>
+      <li>
+        <Feature />
+      </li>
+      <li>
+        <Company />
+      </li>
+      <li className="font-Epilogue">Careers</li>
+      <li className="font-Epilogue">About</li>
     </ul>
-  )
+  );
 }
