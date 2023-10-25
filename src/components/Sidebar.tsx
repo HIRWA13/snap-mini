@@ -1,5 +1,6 @@
 import { ReactElement } from "react";
 import close from "../assets/iconclosemenu.svg"
+import FeatureMobile from "./FeatureMobile"
 
 type SidebarProps = {
   isOpen: boolean;
@@ -21,7 +22,8 @@ export default function Sidebar({isOpen, setIsOpen}: SidebarProps): ReactElement
           />
         </div>
         <div className="mt-14 w-full h-full">
-          mobile content here
+          <FeatureMobile />
+          mobile
         </div>
       </div>
     </section>
