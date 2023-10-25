@@ -22,7 +22,7 @@ export default function Company(): ReactElement {
           </Menu.Button>
           {isCompanyArrowDown ? <img src={arrowDown} /> : <img src={arrowUp} />}
         </div>
-        <Menu.Items className="absolute top-14 w-32 py-2 bg-light rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+        <Menu.Items className="absolute top-14 w-32 py-2 outline-none bg-light rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
           <div className="flex items-center space-x-5 w-full p-2 px-4">
             <h1 className="font-Epilogue text-base text-gray">History</h1>
           </div>
