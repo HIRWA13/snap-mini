@@ -10,7 +10,7 @@ export default function MultiLevelDropdown():ReactElement {
     <Sidebar aria-label="Sidebar with multi-level dropdown example">
       <Sidebar.Items>
         <Sidebar.ItemGroup>
-          <Sidebar.Collapse as="div" label="E-commerce">
+          <Sidebar.Collapse as="div" label="Feacture" className="font-Epilogue">
             <Sidebar.Item href="#">
               <div className="py-2 flex items-center space-x-3">
                 <img src={Todo} />
@@ -18,27 +18,51 @@ export default function MultiLevelDropdown():ReactElement {
               </div>
             </Sidebar.Item>
             <Sidebar.Item href="#">
-              <div className="py-2 flex items-center space-x-3">
+              <div className="flex items-center space-x-3">
                 <img src={Calendar} />
                 <h1>Products</h1>
               </div>
             </Sidebar.Item>
             <Sidebar.Item href="#">
-              <div className="py-2 flex items-center space-x-3">
+              <div className="flex items-center space-x-3">
                 <img src={Reminders} />
                 <h1>Products</h1>
               </div>
             </Sidebar.Item>
             <Sidebar.Item href="#">
-              <div className="py-2 flex items-center space-x-3">
+              <div className="flex items-center space-x-3">
                 <img src={Planning} />
                 <h1>Products</h1>
               </div>
             </Sidebar.Item>
           </Sidebar.Collapse>
+          <Sidebar.Collapse as="div" label="Company" className="font-Epilogue">
+            <Sidebar.Item href="#">
+              <div className="flex items-center space-x-3">
+                <h1>History</h1>
+              </div>
+            </Sidebar.Item>
+            <Sidebar.Item href="#">
+              <div className="flex items-center space-x-3">
+                <h1>Our Team</h1>
+              </div>
+            </Sidebar.Item>
+            <Sidebar.Item href="#">
+              <div className="flex items-center space-x-3">
+                <h1>Blog</h1>
+              </div>
+            </Sidebar.Item>
+          </Sidebar.Collapse>
 
-          <Sidebar.Item href="#">
-            <p>Products</p>
+          <Sidebar.Item href="#"as="div" className="mt-3">
+            <div className="space-y-4 flex flex-col">
+              <button className="font-Epilogue font-medium cursor-pointer">
+                Login
+              </button>
+              <button className="py-2 px-7 border-2 rounded-xl font-Epilogue font-medium hover:bg-dark hover:text-light transition-all duration-200">
+                Register
+              </button>
+            </div>
           </Sidebar.Item>
         </Sidebar.ItemGroup>
       </Sidebar.Items>
