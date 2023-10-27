@@ -12,10 +12,10 @@ export default function Main():ReactElement {
         </section>
         <section className="mt-5 space-y-2 md:mt-0 flex flex-col items-center justify-center gap-3 md:items-start md:space-y-6 md:p-0">
           <div>
-            <h1 className="text-4xl text-dark text-center font-Epilogue font-black md:text-7xl md:text-left md:pr-32">
+            <h1 className="text-4xl text-dark text-center font-Epilogue font-black md:text-7xl md:text-left">
               Make
             </h1>
-            <h1 className="text-4xl text-dark text-center font-Epilogue font-black md:text-7xl md:text-left md:pr-32">
+            <h1 className="text-4xl text-dark text-center font-Epilogue font-black md:text-7xl md:text-left">
              remote work
             </h1>
           </div>
