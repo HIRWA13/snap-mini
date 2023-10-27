@@ -1,8 +1,8 @@
 import { ReactElement } from "react"
-import Logo from "../assets/logo"
 import IconMenu from "../assets/IconMenu"
 import LoginSignUp from "./LoginSignUp"
 import Navigation from "./Navigation"
+import Logo from "../assets/Logo"
 
 type HeaderProps = {
   isOpen: boolean;

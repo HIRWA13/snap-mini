@@ -1,5 +1,5 @@
 import { ReactElement } from "react"
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 import Header from "./components/Header"
 import Main from "./components/Main"
