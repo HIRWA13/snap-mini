@@ -1,8 +1,8 @@
 import { ReactElement } from "react";
-import clientaudiophile from "../assets/clientaudiophile.svg";
-import clientdatabiz from "../assets/clientdatabiz.svg";
-import clientmaker from "../assets/clientmaker.svg";
-import clientmeet from "../assets/clientmeet.svg";
+import clientaudiophile from "/src/assets/clientaudiophile.svg";
+import clientdatabiz from "/src/assets/clientdatabiz.svg";
+import clientmaker from "/src/assets/clientmaker.svg";
+import clientmeet from "/src/assets/clientmeet.svg";
 
 export default function Clients(): ReactElement {
   return (
