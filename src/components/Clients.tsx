@@ -1,12 +1,16 @@
 import { ReactElement } from "react";
+import Clientaudiophile from "../assets/clientaudiophile";
+import Clientdatabiz from "../assets/clientdatabiz";
+import Clientmaker from "../assets/clientmaker";
+import Clientmeet from "../assets/clientmeet";
 
 export default function Clients(): ReactElement {
   return (
-    <section className="flex items-center justify-between gap-3 md:justify-start md:gap-x-10">
-      <img className="h-5" src="/src/assets/clientdatabiz.svg" />
-      <img className="h-5" src="/src/assets/clientaudiophile.svg" />
-      <img className="h-5" src="/src/assets/clientmaker.svg" />
-      <img className="h-5" src="/src/assets/clientmeet.svg" />
+    <section className="flex items-center justify-between py-2 gap-2 md:gap-3 md:justify-start md:gap-x-10">
+      <Clientaudiophile />
+      <Clientdatabiz />
+      <Clientmaker />
+      <Clientmeet />
     </section>
   );
 }
