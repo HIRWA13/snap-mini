@@ -22,6 +22,7 @@ export default function Sidebar({isOpen, setIsOpen}: SidebarProps): ReactElement
             src={close}
             className="fixed top-5 right-4 cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
+            alt="close"
           />
         </div>
         <div className="mt-14 w-full h-full">

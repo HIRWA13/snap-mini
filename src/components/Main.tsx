@@ -8,7 +8,7 @@ export default function Main():ReactElement {
     <main className="space-y-8 md:p-3 md:flex md:items-center md:justify-around md:w-4/5 md:mx-auto">
       <section className="space-y-10 md:w-1/2 md:space-y-24">
         <section>
-          <img src={mobileHero} className="md:hidden" />
+          <img src={mobileHero} className="md:hidden" alt="mobile hero"/>
         </section>
         <section className="mt-5 space-y-2 md:mt-0 flex flex-col items-center justify-center gap-3 md:items-start md:space-y-6 md:p-0">
           <div>
@@ -31,7 +31,7 @@ export default function Main():ReactElement {
           <Clients />
         </section>
       </section>
-      <img src={heroImage} className="hidden md:block md:w-1/3" />
+      <img src={heroImage} className="hidden md:block md:w-1/3"alt="hero"/>
     </main>
   );
 }

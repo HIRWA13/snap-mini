@@ -13,25 +13,25 @@ export default function MultiLevelDropdown():ReactElement {
           <Sidebar.Collapse as="div" label="Feacture" className="font-Epilogue">
             <Sidebar.Item href="#">
               <div className="py-2 flex items-center space-x-3">
-                <img src={Todo} />
+                <img src={Todo} alt="drop down content"/>
                 <h1>Products</h1>
               </div>
             </Sidebar.Item>
             <Sidebar.Item href="#">
               <div className="flex items-center space-x-3">
-                <img src={Calendar} />
+                <img src={Calendar}alt="drop down content" />
                 <h1>Products</h1>
               </div>
             </Sidebar.Item>
             <Sidebar.Item href="#">
               <div className="flex items-center space-x-3">
-                <img src={Reminders} />
+                <img src={Reminders} alt="drop down content"/>
                 <h1>Products</h1>
               </div>
             </Sidebar.Item>
             <Sidebar.Item href="#">
               <div className="flex items-center space-x-3">
-                <img src={Planning} />
+                <img src={Planning} alt="drop down content"/>
                 <h1>Products</h1>
               </div>
             </Sidebar.Item>
